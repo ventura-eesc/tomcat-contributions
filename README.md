@@ -52,5 +52,5 @@ Or to avoid the tests related to the APR:
 
 ```
 # Still requires APR/native library to be present
-execute.test.apr=true
+execute.test.apr=false
 ```
