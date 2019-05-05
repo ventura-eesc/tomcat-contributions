@@ -67,3 +67,15 @@ brew install tomcat-native
 * (Some docs)[https://tomcat.apache.org/native-doc/]
 
 To build from sources take a look on the: tomcat-native-1.2.8-src/native/BUILDING
+
+
+```bash
+In order for tomcat's APR lifecycle listener to find this library, you'll
+need to add it to java.library.path. This can be done by adding this line
+to $CATALINA_HOME/bin/setenv.sh
+
+  CATALINA_OPTS="$CATALINA_OPTS -Djava.library.path=/usr/local/opt/tomcat-native/lib"
+
+If $CATALINA_HOME/bin/setenv.sh doesn't exist, create it and make it executable.
+```
+
