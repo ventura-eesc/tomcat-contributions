@@ -54,3 +54,16 @@ Or to avoid the tests related to the APR:
 # Still requires APR/native library to be present
 execute.test.apr=false
 ```
+
+## How to install tomcat native
+
+Mac OS X:
+
+```bash
+brew install tomcat-native
+```
+
+* (Here the downloading page)[http://tomcat.apache.org/download-native.cgi]
+* (Some docs)[https://tomcat.apache.org/native-doc/]
+
+To build from sources take a look on the: tomcat-native-1.2.8-src/native/BUILDING
