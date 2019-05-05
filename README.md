@@ -63,8 +63,8 @@ Mac OS X:
 brew install tomcat-native
 ```
 
-* (Here the downloading page)[http://tomcat.apache.org/download-native.cgi]
-* (Some docs)[https://tomcat.apache.org/native-doc/]
+* [Here the downloading page](http://tomcat.apache.org/download-native.cgi)
+* [Some docs](https://tomcat.apache.org/native-doc/)
 
 To build from sources take a look on the: tomcat-native-1.2.8-src/native/BUILDING
 
