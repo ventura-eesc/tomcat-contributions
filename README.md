@@ -28,3 +28,29 @@ cd tomcat/output/build
 
 And voila! you have your tomcat working.
 
+## Execute tests
+
+Go to your tomcat-forked folder and execute:
+
+```bash
+ant test
+```
+
+
+Some considerations:
+Use the build.properties.default to customize some aspects as:
+
+```
+# Number of parallel threads to use for testing. The recommended value is one
+# thread per core.
+# Note: Cobertura code coverage currently requires this to be set to 1. Setting
+#       a value above one will disable code coverage if enabled.
+test.threads=4
+```
+
+Or to avoid the tests related to the APR:
+
+```
+# Still requires APR/native library to be present
+execute.test.apr=true
+```
